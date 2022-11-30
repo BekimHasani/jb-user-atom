@@ -41,6 +41,6 @@ public class User {
     @Column(nullable = false)
     private boolean tokenExpired;
 
-    @Column(nullable = false)
+    @Column(nullable = false, columnDefinition = "false")
     private boolean emailConfirmation;
 }

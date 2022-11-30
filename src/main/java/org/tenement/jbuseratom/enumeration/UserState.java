@@ -6,5 +6,4 @@ public enum UserState {
     INACTIVE,
     BLOCKED,
     DELETED
-
 }
