@@ -3,9 +3,11 @@ package org.tenement.jbuseratom.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.validator.constraints.UniqueElements;
 import org.tenement.jbuseratom.enumeration.UserState;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
 import java.util.Date;
 
 
@@ -13,7 +15,7 @@ import java.util.Date;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name="`User`")
+@Table(name = "`User`")
 public class User {
 
     @Id

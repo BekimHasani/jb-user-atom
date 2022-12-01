@@ -6,7 +6,6 @@ import org.tenement.jbuseratom.entity.User;
 import org.tenement.jbuseratom.repository.UserRepository;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class UserService {
@@ -34,5 +33,9 @@ public class UserService {
 
     private User saveUser(User user) {
         return userRepository.save(user);
+    }
+
+    public User fetchUserByEmail(String email) {
+        return userRepository.findByEmail(email);
     }
 }
